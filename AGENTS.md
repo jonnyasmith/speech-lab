@@ -4,6 +4,8 @@
 
 ### This context
 
+- What we are building, in full → docs/idea.md
+- Milestones, slices, and open questions → docs/roadmap.md
 - Solution-wide vocabulary → docs/agents/domain.md
 - System-wide decisions → docs/adr/
 - Issue tracker (issues live as GitHub issues, via the `gh` CLI) → docs/agents/issue-tracker.md
