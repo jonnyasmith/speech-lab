@@ -22,14 +22,15 @@ Two consequences worth stating up front:
 ## M0 — Spikes
 
 Throwaway code answering questions whose answers change the architecture. Each
-spike is done when it has produced a written answer, not a component.
+spike is done when it has produced a written answer under `docs/adr/`, not a
+component. All four need Fedora hardware and a human voice.
 
 | # | Question | What it changes |
 |---|---|---|
-| 0.1 | Can candidate DSP chains be applied **offline** to one recording with results equivalent to processing the same chain live in PipeWire? | If yes: record once, evaluate hundreds of chains as pure file transforms. Trial cost collapses from minutes to milliseconds and M4 becomes tractable. If no: every trial needs a live graph rebuild and re-read, and the candidate space must shrink drastically. **Highest-leverage question in the project.** |
-| 0.2 | Can a PipeWire filter chain be built, used, and torn down programmatically, repeatably, without leaking nodes? | Feasibility of the whole "test N routings" premise, and of config emission in M5. |
-| 0.3 | Does WER on a read passage predict transcription quality on spontaneous speech? | If correlation is weak, the ground-truth corpus needs spontaneous samples and the objective function needs rethinking. |
-| 0.4 | Is per-trial CPU/RAM attribution reliable enough to score on? | Whether the composite score keeps its resource terms or drops to accuracy + latency only. |
+| [0.1](https://github.com/jonnyasmith/speech-lab/issues/1) | Can candidate DSP chains be applied **offline** to one recording with results equivalent to processing the same chain live in PipeWire? | If yes: record once, evaluate hundreds of chains as pure file transforms. Trial cost collapses from minutes to milliseconds and M4 becomes tractable. If no: every trial needs a live graph rebuild and re-read, and the candidate space must shrink drastically. **Highest-leverage question in the project.** |
+| [0.2](https://github.com/jonnyasmith/speech-lab/issues/2) | Can a PipeWire filter chain be built, used, and torn down programmatically, repeatably, without leaking nodes? | Feasibility of the whole "test N routings" premise, and of config emission in M5. |
+| [0.3](https://github.com/jonnyasmith/speech-lab/issues/3) | Does WER on a read passage predict transcription quality on spontaneous speech? | If correlation is weak, the ground-truth corpus needs spontaneous samples and the objective function needs rethinking. |
+| [0.4](https://github.com/jonnyasmith/speech-lab/issues/4) | Is per-trial CPU/RAM attribution reliable enough to score on? | Whether the composite score keeps its resource terms or drops to accuracy + latency only. |
 
 ## M1 — Measurement spine
 
