@@ -1,4 +1,4 @@
-# VoiceCal roadmap
+# SpeechLab roadmap
 
 Decomposition of [docs/idea.md](idea.md) into buildable slices.
 
@@ -34,7 +34,7 @@ component. All four need Fedora hardware and a human voice.
 
 ## M1 — Measurement spine
 
-`voicecal record` and `voicecal bench` against one fixed pipeline and one fixed
+`speechlab record` and `speechlab bench` against one fixed pipeline and one fixed
 engine, writing a result row and printing WER and latency.
 
 Everything later plugs into this. Contents:
@@ -80,7 +80,7 @@ their place — the spec asserts several will; this is where that gets tested.
 - Config emission: `pipeline.toml`, `voice.conf`, `models.toml`, PipeWire and
   WirePlumber fragments.
 
-`voicecal calibrate` — the headline command — exists at the end of this
+`speechlab calibrate` — the headline command — exists at the end of this
 milestone and not before.
 
 Bayesian optimisation and TPE are only worth their complexity if the per-trial

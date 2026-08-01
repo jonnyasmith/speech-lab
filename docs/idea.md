@@ -1,10 +1,10 @@
-# Project Specification: VoiceCal - Automatic Speech Pipeline Optimizer for Linux
+# Project Specification: SpeechLab - Automatic Speech Pipeline Optimizer for Linux
 
 ## Executive Summary
 
-VoiceCal is an open-source Linux utility that automatically discovers the optimal speech recognition pipeline for a user's specific hardware, environment, and workflow.
+SpeechLab is an open-source Linux utility that automatically discovers the optimal speech recognition pipeline for a user's specific hardware, environment, and workflow.
 
-Rather than relying on generic defaults, VoiceCal empirically measures speech recognition accuracy, latency, CPU usage, and end-to-end responsiveness by repeatedly testing different combinations of audio processing, PipeWire routing, and speech-to-text models against a known transcript.
+Rather than relying on generic defaults, SpeechLab empirically measures speech recognition accuracy, latency, CPU usage, and end-to-end responsiveness by repeatedly testing different combinations of audio processing, PipeWire routing, and speech-to-text models against a known transcript.
 
 The result is a fully tuned voice input system that works reliably for AI coding agents, terminals, editors, browsers, and desktop applications.
 
@@ -27,7 +27,7 @@ Users must manually experiment with:
 
 This is time-consuming and largely guesswork.
 
-VoiceCal replaces guesswork with automated benchmarking.
+SpeechLab replaces guesswork with automated benchmarking.
 
 ---
 
@@ -85,7 +85,7 @@ Especially users running tools such as:
 
 # High-Level Architecture
 
-VoiceCal consists of several independent modules.
+SpeechLab consists of several independent modules.
 
 ## Module 1 — Calibration
 
@@ -477,7 +477,7 @@ PipeWire configs
 
 WirePlumber configs
 
-VoiceCal config
+SpeechLab config
 
 Whisper config
 
@@ -488,7 +488,7 @@ Suggested environment variables
 Example:
 
 ```
-~/.config/voicecal/
+~/.config/speechlab/
 
 pipeline.toml
 
@@ -673,7 +673,7 @@ The project is successful if it can:
 
 # Long-Term Vision
 
-VoiceCal becomes for Linux speech recognition what benchmark tools are for GPUs.
+SpeechLab becomes for Linux speech recognition what benchmark tools are for GPUs.
 
 Instead of users asking:
 
@@ -682,7 +682,7 @@ Instead of users asking:
 they simply run:
 
 ```
-voicecal calibrate
+speechlab calibrate
 ```
 
 Ten minutes later they receive:
